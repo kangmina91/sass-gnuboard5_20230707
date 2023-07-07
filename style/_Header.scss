@@ -1,0 +1,45 @@
+.Header {
+    border-bottom: 1px solid $color-line;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100rem;
+
+        .gnb {
+            &>ul {
+                display: flex;
+                gap: 40rem;
+
+                &>li {
+                    position: relative;
+
+                    >a {
+                        display: block;
+                        line-height: 99rem;
+                    }
+
+                    .submenu {
+                        position: absolute;
+                        top: 90rem;
+                        left: 50%;
+                        z-index: 999;
+                        transform: translate(-50%, 0);
+                        width: 120rem;
+                        background: $color-main;
+                        color: $color-white;
+                        border: 2px solid $color-line;
+                        display: none;
+                    }
+
+                    &:hover {
+                        .submenu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

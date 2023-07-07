@@ -1,0 +1,182 @@
+html {
+  font-size: 6.25%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  line-height: 1;
+  font-size: 16rem;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+em,
+i,
+address {
+  font-size: normal;
+}
+
+.inner {
+  max-width: 1200rem;
+  margin: 0 auto;
+  padding: 0 15rem;
+}
+
+.section {
+  padding: 100rem 0;
+}
+
+.Header {
+  border-bottom: 1px solid #f2f2f2;
+}
+.Header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rem;
+}
+.Header .inner .gnb > ul {
+  display: flex;
+  gap: 40rem;
+}
+.Header .inner .gnb > ul > li {
+  position: relative;
+}
+.Header .inner .gnb > ul > li > a {
+  display: block;
+  line-height: 99rem;
+}
+.Header .inner .gnb > ul > li .submenu {
+  position: absolute;
+  top: 90rem;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, 0);
+  width: 120rem;
+  background: #369;
+  color: #fff;
+  border: 2px solid #f2f2f2;
+  display: none;
+}
+.Header .inner .gnb > ul > li:hover .submenu {
+  display: block;
+}
+
+.MainVisual {
+  position: relative;
+  height: 30vh;
+  background: #369;
+}
+.MainVisual .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200rem;
+  width: 100%;
+}
+.MainVisual .slogan h2 {
+  font-size: 40rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 10rem 0;
+}
+
+.MainContent h3 {
+  font-size: 20rem;
+  font-weight: bolder;
+  padding: 0 0 20rem 0;
+  border-bottom: 1px solid #369;
+  margin: 0 0 10rem 0;
+}
+.MainContent h3 a {
+  float: right;
+}
+.MainContent .inner {
+  display: flex;
+  gap: 30rem;
+}
+.MainContent .inner > * {
+  flex: 1;
+  min-width: 0;
+}
+.MainContent .main_notice li {
+  line-height: 30rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.MainContent .main_notice li span {
+  float: right;
+}
+
+.SubPage .sub_title {
+  display: flex;
+  align-items: center;
+  height: 300rem;
+  background: #f2f2f2;
+}
+.SubPage .sub_title .inner {
+  width: 100%;
+}
+.SubPage .aside {
+  max-width: 1200rem;
+  margin: 0 auto;
+  padding: 0 15rem;
+  background: #369;
+  color: #fff;
+  padding: 30rem 50rem;
+  border-radius: 30rem 0 30rem 0;
+  margin: -40rem auto 0 auto;
+}
+.SubPage .aside .submenu {
+  display: flex;
+  gap: 30rem;
+}
+.SubPage .aside .submenu li {
+  position: relative;
+}
+.SubPage .aside .submenu li.on::after {
+  content: "";
+  position: absolute;
+  top: -20rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.SubContent {
+  padding: 50rem 0;
+}
+.SubContent .tbl_wrap thead {
+  background: #369;
+  color: #fff;
+}
+
+.Footer {
+  padding: 30rem 0;
+  text-align: center;
+  border-top: 1px solid #f2f2f2;
+}/*# sourceMappingURL=style.css.map */

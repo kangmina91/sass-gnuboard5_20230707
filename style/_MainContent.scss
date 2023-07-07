@@ -1,0 +1,32 @@
+.MainContent {
+    h3 {
+        font-size: 20rem;
+        font-weight: bolder;
+        padding: 0 0 20rem 0;
+        border-bottom: 1px solid $color-main;
+        margin: 0 0 10rem 0;
+
+        a {
+            float: right;
+        }
+    }
+
+    .inner {
+        display: flex;
+        gap: 30rem;
+
+        &>* {
+            flex: 1;
+            min-width: 0;
+        }
+    }
+
+    .main_notice li {
+        line-height: 30rem;
+        border-bottom: 1px solid $color-line;
+
+        span {
+            float: right;
+        }
+    }
+}

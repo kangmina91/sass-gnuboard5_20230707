@@ -1,0 +1,47 @@
+.SubPage {
+    .sub_title {
+        display: flex;
+        align-items: center;
+        height: 300rem;
+        background: $color-line;
+
+        .inner {
+            width: 100%;
+        }
+
+    }
+
+    .aside {
+        @include inner();
+        background: $color-main;
+        color: $color-white;
+        padding: 30rem 50rem;
+        border-radius: 30rem 0 30rem 0;
+
+        margin: -40rem auto 0 auto;
+
+        .submenu {
+            display: flex;
+            gap: 30rem;
+
+            li {
+                position: relative;
+
+                &.on::after {
+                    content: "";
+                    position: absolute;
+                    top: -20rem;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    background: $color-white;
+                }
+            }
+        }
+    }
+
+
+
+}

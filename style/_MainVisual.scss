@@ -1,0 +1,18 @@
+.MainVisual {
+    position: relative;
+    height: 30vh;
+    background: $color-main;
+
+    .slogan {
+        @include position_center();
+        max-width: $size-inner;
+        width: 100%;
+
+        h2 {
+            font-size: $size-h2;
+            font-weight: 700;
+            color: $color-white;
+            margin: 0 0 10rem 0;
+        }
+    }
+}

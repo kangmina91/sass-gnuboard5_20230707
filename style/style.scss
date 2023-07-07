@@ -1,0 +1,18 @@
+@import './variable';
+@import './mixins';
+
+
+@import './common';
+
+// layout
+
+@import './Header';
+@import './MainVisual';
+@import './MainContent';
+
+
+@import './SubPage';
+@import './SubContent';
+
+
+@import './Footer';
